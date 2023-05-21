@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG - JavaScript</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 id="main-header">Create a character</h1>
+
+    <div id="container">
+
+        <form id="createCharacterForm" action="index.js">
+            <h2>Name: <input type="text" id="cname"></h2>
+            <p id="errorName">This field is required</p>
+            <h2> Class: <select id="clist"></select></h2>
+            <input type="button" onclick="characterCreate()" value="Submit">
+        </form>
+
+        <div id="playerStats">
+            <h2 id="playerName"></h2>
+            <h2 id="playerClass"></h2>
+            <h2 id="playerHealth"></h2>
+            <h2 id="playerMana"></h2>
+        </div>
+
+        <div id="adventureBox">
+            <p id="zoneText"></p>
+            <p id="adventureText"></p>
+            <div id="adventureForm">
+                <p>How will you proceed?</p>
+                <input type="button" onclick="searchArea()" value="Search Area">
+                <input type="button" onclick="restHere()" value="Rest Here">
+                <input type="button" onclick="moveOn()" value="Move On">
+            </div>
+        </div>
+
+        <div id="battleBox">
+            <h2 id="enemyName"></h2>
+            <h2 id="enemyHealth"></h2>
+            <h2>Command?</h2>
+            <input type="button" onclick="runAway()" value="Run Away!">
+        </div>
+
+        
+
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    font-family: 'Press Start 2P';
+    font-size: 3rem;
+}
+
+h2, p {
+    color: white;
+    font-family: 'Press Start 2P';
+}
