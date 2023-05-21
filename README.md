@@ -1,2 +1,2 @@
 # RPG_JavaScript
-Testing out forms
+Testing out forms and hide/show
